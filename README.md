@@ -25,7 +25,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop Screenshot](https://github.com/willetto/Frontend-Mentor-Stat-Card-Component/blob/1e4b11be24059387acfec6b25a850b843c1bdf06/Desktop%20Screenshot.png)
-![Mobile Screenshot](https://github.com/willetto/Frontend-Mentor-Stat-Card-Component/blob/1e4b11be24059387acfec6b25a850b843c1bdf06/mobile%20Screenshot.png)
+![Mobile Screenshot](https://github.com/willetto/Frontend-Mentor-Stat-Card-Component/blob/31c029919374ef0b503a2b2af209921e4afa4114/Mobile%20Screenshot.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
