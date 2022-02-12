@@ -14,22 +14,18 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
 ### The challenge
 
 Users should be able to:
-
 - View the optimal layout depending on their device's screen size
 
 ### Screenshot
 
-![Desktop Screenshot](Destop_Screenshot.jpg)
-![Mobile Screenshot](Mobile_Screenshot.jpg)
+![Desktop Screenshot](Destop Screenshot.jpg)
+![Mobile Screenshot](Mobile Screenshot.jpg)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -45,6 +41,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Github Pages](https://willetto.github.io/Frontend-Mentor-Stat-Card-Component/)
 
 ## My process
+I focused on creating html tags and classes that would be the most useful and accesible. Then I focused on the background, color & font styling. Only then did I focus on making the component responsive. I designed the mobile layout first, and then the media quereies were easy to implement. 
 
 ### Built with
 - Semantic HTML5 markup
@@ -52,11 +49,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - Mobile-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
-
-I focused on creating html tags and classes that would be the most useful and accesible. Then I focused on the background, color & font styling. Only then did I focus on making the component responsive. I designed the mobile layout first, and then the media quereies were easy to implement. 
 
 Below is how I applied the stylesheet color to the B&W image with two overlays to make it as close to the design as possilbe.
 
