@@ -1,0 +1,195 @@
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --violet-accent: hsl(277, 64%, 61%);
+  --violet-img: hsl(277, 64%, 61%, 0.75);
+  --white-heading: hsl(0, 0%, 100%);
+  --stat-white: hsla(0, 0%, 100%, 0.75);
+  --p-white: hsla(0, 0%, 100%, 0.6);
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;500&display=swap");
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+body {
+  background-color: var(--main-background);
+  display: grid;
+  place-items: center;
+}
+h1 {
+  color: var(--white-heading);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.8rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0 0.5rem 0;
+}
+h2 {
+  color: var(--white-heading);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+}
+h3 {
+  color: var(--p-white);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: center;
+}
+p {
+  color: var(--p-white);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  padding-block: 0.5rem;
+}
+strong {
+  color: var(--violet-accent);
+}
+
+.container {
+  background-color: var(--card-background);
+  padding: 1rem;
+  min-width: 250px;
+  max-width: 90%;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1rem;
+}
+.hero-image {
+  overflow: hidden;
+  position: relative;
+  margin: -1rem -1rem 1rem -1rem;
+}
+
+.hero-image img {
+  position: relative;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: var(--violet-accent);
+  mix-blend-mode: screen;
+}
+.hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: var(--violet-accent);
+  mix-blend-mode: multiply;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+.stat {
+  margin-bottom: 1.2rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 775px) {
+  .container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    max-width: 1440;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: left;
+    margin: 0;
+    padding: 0%;
+  }
+  h1,
+  .content p {
+    width: 80%;
+    padding-bottom: 2rem;
+  }
+  .hero-image {
+    margin: -1rem;
+    padding: 0;
+    /* max-width: 640px; */
+  }
+  .hero-image img {
+    max-width: 650px;
+  }
+  .stats {
+    display: flex;
+    flex-direction: row;
+  }
+  .stat {
+    margin-bottom: 0rem;
+    margin-right: 2rem;
+  }
+  .content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+  }
+}
+
+@media (min-width: 1000px) {
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+.attribution {
+  font-size: 0.5rem;
+  text-align: center;
+}
+.attribution p {
+  width: 100%;
+}
+.attribution a {
+  color: var(--stat-white);
+  text-decoration: none;
+  transition: color 200ms ease-in;
+}
+.attribution a:hover {
+  color: var(--violet-accent);
+}
