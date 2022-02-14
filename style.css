@@ -67,7 +67,7 @@ strong {
   overflow: hidden;
   display: flex;
   flex-direction: column-reverse;
-  margin-tip: min(1rem);
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .hero-image {
